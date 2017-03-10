@@ -8,4 +8,66 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="quantity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:text">@string/quantityTxt</item>
+    </style>
+
+    <style name="operatorsLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="plusBtn">
+        <item name="android:layout_width">@dimen/operBtnLayout</item>
+        <item name="android:layout_height">@dimen/operBtnLayout</item>
+        <item name="android:background">@color/mainColor</item>
+        <item name="android:text">@string/plusBtnTxt</item>
+        <item name="android:onClick">increment</item>
+    </style>
+
+    <style name="minusBtn">
+        <item name="android:layout_width">@dimen/operBtnLayout</item>
+        <item name="android:layout_height">@dimen/operBtnLayout</item>
+        <item name="android:background">@color/mainColor</item>
+        <item name="android:text">@string/minusBtnTxt</item>
+        <item name="android:onClick">decrement</item>
+    </style>
+
+    <style name="quantityValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/quantityMarginLR</item>
+        <item name="android:layout_marginRight">@dimen/quantityMarginLR</item>
+        <item name="android:text">@string/quantityValueTxt</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="priceTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/txtMargin</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:text">@string/priceTitleTxt</item>
+    </style>
+
+    <style name="priceValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:text">@string/priceValueTxt</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="orderBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/mainColor</item>
+        <item name="android:onClick">submitOrder</item>
+        <item name="android:text">@string/orderBtnTxt</item>
+    </style>
+
 </resources>

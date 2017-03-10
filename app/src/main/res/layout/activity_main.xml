@@ -4,66 +4,29 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context="com.example.android.justjava.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="QUANTITY" />
+    <TextView style="@style/quantity" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/operatorsLayout">
 
-        <Button
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="#D3D3D3"
-            android:text="+"
-            android:onClick="increment" />
+        <Button style="@style/plusBtn" />
 
         <TextView
-            android:id="@+id/quantity_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:text="0"
-            android:textColor="#000000" />
+            style="@style/quantityValue"
+            android:id="@+id/quantity_text_view"/>
 
-        <Button
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="#D3D3D3"
-            android:text="-"
-            android:onClick="decrement" />
+        <Button style="@style/minusBtn" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="PRICE" />
+    <TextView style="@style/priceTitle"/>
 
-    <TextView
-        android:id="@+id/price_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="$0"
-        android:textColor="#000000" />
+    <TextView style="@style/priceValue"
+        android:id="@+id/price_text_view"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#D3D3D3"
-        android:text="ORDER"
-        android:onClick="submitOrder" />
+    <Button style="@style/orderBtn"/>
 
 </LinearLayout>
