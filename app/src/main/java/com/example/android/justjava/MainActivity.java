@@ -23,10 +23,21 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = quantity * 5;
+        int price = calculatePrice(quantity, 5);
         String priceMessage = "Total: $" + price;
         priceMessage = priceMessage + "\nThank you!";
         displayMessage(priceMessage);
+    }
+
+    /**
+     * Calculates the price of the order.
+     *
+     * @param quantity is the number of cups of coffee ordered
+     * @param pricePerCup is the price per cups of coffee
+     */
+    private int calculatePrice(int quantity, int pricePerCup) {
+        int price = quantity * pricePerCup;
+        return price;
     }
 
     // Method to increase amount of coffees via button
