@@ -8,17 +8,17 @@
     android:padding="20dp"
     tools:context="com.example.android.justjava.MainActivity">
 
-    <TextView style="@style/quantity" />
+    <TextView style="@style/quantity"/>
 
     <LinearLayout style="@style/operatorsLayout">
 
-        <Button style="@style/plusBtn" />
+        <Button style="@style/plusBtn"/>
 
         <TextView
             style="@style/quantityValue"
             android:id="@+id/quantity_text_view"/>
 
-        <Button style="@style/minusBtn" />
+        <Button style="@style/minusBtn"/>
 
     </LinearLayout>
 
