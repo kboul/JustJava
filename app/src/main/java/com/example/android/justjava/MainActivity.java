@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
      * @param priceOfOrder is the total price of cups of coffee
      */
     private String createOrderSummary(int priceOfOrder) {
-        String message = "Name: Captain Kunal \nQuantity: " + quantity + " \nTotal: " + priceOfOrder + " \nThank you!";
+        String message = "Name: Captain Kunal \nQuantity: " + quantity + " \nTotal: $" + priceOfOrder + " \nThank you!";
         return message;
     }
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
      * @param message is the total amount of money + thank you message
      */
     private void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(message);
+        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        orderSummaryTextView.setText(message);
     }
 }

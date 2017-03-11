@@ -8,11 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="quantity">
+    <style name="quantityTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/txtMargin</item>
         <item name="android:text">@string/quantityTxt</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="operatorsLayout">
@@ -37,7 +38,7 @@
         <item name="android:onClick">decrement</item>
     </style>
 
-    <style name="quantityValue">
+    <style name="quantityTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">@dimen/quantityMarginLR</item>
@@ -46,15 +47,16 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
-    <style name="priceTitle">
+    <style name="orderSummaryTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/txtMargin</item>
         <item name="android:layout_marginBottom">@dimen/txtMargin</item>
         <item name="android:text">@string/priceTitleTxt</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="priceValue">
+    <style name="orderSummaryTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/txtMargin</item>
