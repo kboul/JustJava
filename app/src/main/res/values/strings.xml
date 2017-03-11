@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Just Java</string>
+    <string name="toppingsTxt">Toppings</string>
+    <string name="radioCheckBox">Whipped cream</string>
     <string name="quantityTxt">Quantity</string>
     <string name="plusBtnTxt">+</string>
     <string name="minusBtnTxt">-</string>

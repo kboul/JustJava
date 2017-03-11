@@ -8,6 +8,12 @@
     android:padding="20dp"
     tools:context="com.example.android.justjava.MainActivity">
 
+    <TextView style="@style/toppingsTitle"/>
+
+    <CheckBox
+        style="@style/checkBox"
+        android:id="@+id/notify_me_checkbox"/>
+
     <TextView style="@style/quantityTitle"/>
 
     <LinearLayout style="@style/operatorsLayout">

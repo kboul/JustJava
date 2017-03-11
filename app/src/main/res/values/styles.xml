@@ -8,6 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="toppingsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:text">@string/toppingsTxt</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="checkBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:text">@string/radioCheckBox</item>
+        <item name="textAppearance">?android:textAppearanceMedium</item>
+        <item name="textSize">16sp</item>
+    </style>
+
     <style name="quantityTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
