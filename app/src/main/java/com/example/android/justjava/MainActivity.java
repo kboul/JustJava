@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
 import java.text.NumberFormat;
 
 /**
@@ -24,20 +25,29 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         int price = calculatePrice(quantity, 5);
-        String priceMessage = "Total: $" + price;
-        priceMessage = priceMessage + "\nThank you!";
-        displayMessage(priceMessage);
+        String message = createOrderSummary(price);
+        displayMessage(message);
     }
 
     /**
      * Calculates the price of the order.
      *
-     * @param quantity is the number of cups of coffee ordered
+     * @param quantity    is the number of cups of coffee ordered
      * @param pricePerCup is the price per cups of coffee
      */
     private int calculatePrice(int quantity, int pricePerCup) {
         int price = quantity * pricePerCup;
         return price;
+    }
+
+    /**
+     * Returns a message with the order number and the relevant price.
+     *
+     * @param priceOfOrder is the total price of cups of coffee
+     */
+    private String createOrderSummary(int priceOfOrder) {
+        String message = "Name: Captain Kunal \nQuantity: " + quantity + " \nTotal: " + priceOfOrder + " \nThank you!";
+        return message;
     }
 
     // Method to increase amount of coffees via button
@@ -50,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
         if (quantity > 0) {
             quantity--;
-        }
-        else {
+        } else {
             quantity = 0;
         }
         displayQuantity(quantity);
