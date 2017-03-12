@@ -15,6 +15,15 @@
         <item name="android:padding">@dimen/mainLinearLayoutPadding</item>
     </style>
 
+    <style name="nameEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
+        <item name="android:hint">@string/nameEditTextHint</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:backgroundTint">@android:color/holo_green_dark</item>
+    </style>
+
     <style name="toppingsTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

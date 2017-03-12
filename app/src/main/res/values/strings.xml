@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Just Java</string>
+    <string name="nameEditTextHint">Name</string>
     <string name="toppingsTxt">Toppings</string>
     <string name="whippedCreamCheckBox">Whipped cream</string>
     <string name="chocolateCheckBox">Chocolate</string>
