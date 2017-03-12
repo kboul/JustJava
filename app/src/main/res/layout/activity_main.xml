@@ -5,13 +5,17 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.justjava.MainActivity">
 
-    <LinearLayout style="@style/main_linear_layout">
+    <LinearLayout style="@style/mainLinearLayout">
 
         <TextView style="@style/toppingsTitle" />
 
         <CheckBox
             android:id="@+id/whipped_cream_checkbox"
-            style="@style/checkBox" />
+            style="@style/whippedCreamCheckBox" />
+
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            style="@style/chocolateCheckBox" />
 
         <TextView style="@style/quantityTitle" />
 

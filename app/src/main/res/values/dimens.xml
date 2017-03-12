@@ -5,4 +5,7 @@
     <dimen name="operBtnLayout">48dp</dimen>
     <dimen name="txtMargin">16dp</dimen>
     <dimen name="quantityMarginLR">8dp</dimen>
+    <dimen name="checkBoxesTextSize">16sp</dimen>
+    <dimen name="checkBoxesPaddLeft">24dp</dimen>
+    <dimen name="mainLinearLayoutPadding">20dp</dimen>
 </resources>

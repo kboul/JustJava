@@ -8,11 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="main_linear_layout">
+    <style name="mainLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:padding">20dp</item>
+        <item name="android:padding">@dimen/mainLinearLayoutPadding</item>
     </style>
 
     <style name="toppingsTitle">
@@ -23,13 +23,21 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="checkBox">
+    <style name="whippedCreamCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/checkBoxesPaddLeft</item>
+        <item name="android:text">@string/whippedCreamCheckBox</item>
+        <item name="android:textSize">@dimen/checkBoxesTextSize</item>
+    </style>
+
+    <style name="chocolateCheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:paddingLeft">24dp</item>
-        <item name="android:text">@string/radioCheckBox</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">@dimen/checkBoxesPaddLeft</item>
+        <item name="android:text">@string/chocolateCheckBox</item>
+        <item name="android:textSize">@dimen/checkBoxesTextSize</item>
     </style>
 
     <style name="quantityTitle">
