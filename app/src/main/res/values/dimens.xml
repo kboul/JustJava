@@ -2,10 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="operBtnLayout">48dp</dimen>
-    <dimen name="txtMargin">16dp</dimen>
-    <dimen name="quantityMarginLR">8dp</dimen>
-    <dimen name="checkBoxesTextSize">16sp</dimen>
-    <dimen name="checkBoxesPaddLeft">24dp</dimen>
-    <dimen name="mainLinearLayoutPadding">20dp</dimen>
+    <dimen name="oper_button_layout">48dp</dimen>
+    <dimen name="txt_margin">16dp</dimen>
+    <dimen name="quantity_margin_left_right">8dp</dimen>
+    <dimen name="check_boxes_text_size">16sp</dimen>
+    <dimen name="check_boxes_padding_left">24dp</dimen>
+    <dimen name="main_linear_layout_padding">20dp</dimen>
 </resources>

@@ -12,14 +12,14 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:padding">@dimen/mainLinearLayoutPadding</item>
+        <item name="android:padding">@dimen/main_linear_layout_padding</item>
     </style>
 
     <style name="nameEditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:hint">@string/nameEditTextHint</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:hint">@string/name</item>
         <!-- Forces inserted text to start with capital letter s-->
         <item name="android:inputType">textCapWords</item>
         <item name="android:backgroundTint">@android:color/holo_green_dark</item>
@@ -28,33 +28,33 @@
     <style name="toppingsTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:text">@string/toppingsTxt</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:text">@string/toppings</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="whippedCreamCheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">@dimen/checkBoxesPaddLeft</item>
-        <item name="android:text">@string/whippedCreamCheckBox</item>
-        <item name="android:textSize">@dimen/checkBoxesTextSize</item>
+        <item name="android:paddingLeft">@dimen/check_boxes_padding_left</item>
+        <item name="android:text">@string/whipped_cream</item>
+        <item name="android:textSize">@dimen/check_boxes_text_size</item>
     </style>
 
     <style name="chocolateCheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:paddingLeft">@dimen/checkBoxesPaddLeft</item>
-        <item name="android:text">@string/chocolateCheckBox</item>
-        <item name="android:textSize">@dimen/checkBoxesTextSize</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:paddingLeft">@dimen/check_boxes_padding_left</item>
+        <item name="android:text">@string/chocolate</item>
+        <item name="android:textSize">@dimen/check_boxes_text_size</item>
     </style>
 
     <style name="quantityTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:text">@string/quantityTxt</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:text">@string/quantity</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
@@ -65,44 +65,44 @@
     </style>
 
     <style name="plusBtn">
-        <item name="android:layout_width">@dimen/operBtnLayout</item>
-        <item name="android:layout_height">@dimen/operBtnLayout</item>
+        <item name="android:layout_width">@dimen/oper_button_layout</item>
+        <item name="android:layout_height">@dimen/oper_button_layout</item>
         <item name="android:background">@color/mainColor</item>
-        <item name="android:text">@string/plusBtnTxt</item>
+        <item name="android:text">@string/plus</item>
         <item name="android:onClick">increment</item>
     </style>
 
     <style name="minusBtn">
-        <item name="android:layout_width">@dimen/operBtnLayout</item>
-        <item name="android:layout_height">@dimen/operBtnLayout</item>
+        <item name="android:layout_width">@dimen/oper_button_layout</item>
+        <item name="android:layout_height">@dimen/oper_button_layout</item>
         <item name="android:background">@color/mainColor</item>
-        <item name="android:text">@string/minusBtnTxt</item>
+        <item name="android:text">@string/minus</item>
         <item name="android:onClick">decrement</item>
     </style>
 
     <style name="quantityTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/quantityMarginLR</item>
-        <item name="android:layout_marginRight">@dimen/quantityMarginLR</item>
-        <item name="android:text">@string/quantityValueTxt</item>
+        <item name="android:layout_marginLeft">@dimen/quantity_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/quantity_margin_left_right</item>
+        <item name="android:text">@string/initial_quantity_value</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="orderSummaryTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/txtMargin</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:text">@string/priceTitleTxt</item>
+        <item name="android:layout_marginTop">@dimen/txt_margin</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:text">@string/price_title</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="orderSummaryTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/txtMargin</item>
-        <item name="android:text">@string/priceValueTxt</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:text">@string/price_value</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
@@ -111,7 +111,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/mainColor</item>
         <item name="android:onClick">submitOrder</item>
-        <item name="android:text">@string/orderBtnTxt</item>
+        <item name="android:text">@string/order</item>
     </style>
 
 </resources>
