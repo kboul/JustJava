@@ -12,7 +12,7 @@
 
     <CheckBox
         style="@style/checkBox"
-        android:id="@+id/notify_me_checkbox"/>
+        android:id="@+id/whipped_cream_checkbox"/>
 
     <TextView style="@style/quantityTitle"/>
 
