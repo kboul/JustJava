@@ -7,8 +7,8 @@
     <string name="quantityTxt">Quantity</string>
     <string name="plusBtnTxt">+</string>
     <string name="minusBtnTxt">-</string>
-    <string name="quantityValueTxt">0</string>
+    <string name="quantityValueTxt">1</string>
     <string name="priceTitleTxt">Order Summary</string>
-    <string name="priceValueTxt">$0</string>
+    <string name="priceValueTxt">$5</string>
     <string name="orderBtnTxt">Order</string>
 </resources>

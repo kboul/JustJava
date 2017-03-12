@@ -1,5 +1,6 @@
 package com.example.android.justjava;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -15,7 +17,7 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
-    int quantity = 0; //declare global variable
+    int quantity = 1; //declare global variable
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,18 +88,22 @@ public class MainActivity extends AppCompatActivity {
 
     // Method to increase amount of coffees via button
     public void increment(View view) {
-        quantity++;
-        displayQuantity(quantity);
+        if (quantity < 100) {
+            quantity++;
+            displayQuantity(quantity);
+        } else {
+            toast("You cannot have more than 100 coffees!");
+        }
     }
 
     // Method to decrease amount of coffees via button
     public void decrement(View view) {
-        if (quantity > 0) {
+        if (quantity > 1) {
             quantity--;
+            displayQuantity(quantity);
         } else {
-            quantity = 0;
+            toast("You cannot have less than 1 coffee!");
         }
-        displayQuantity(quantity);
     }
 
     /**
@@ -118,5 +124,14 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String message) {
         TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
         orderSummaryTextView.setText(message);
+    }
+
+    private void toast(String message) {
+        Context context = getApplicationContext();
+        CharSequence text = message;
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }
