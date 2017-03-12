@@ -20,7 +20,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/txtMargin</item>
         <item name="android:hint">@string/nameEditTextHint</item>
-        <item name="android:inputType">textMultiLine</item>
+        <!-- Forces inserted text to start with capital letter s-->
+        <item name="android:inputType">textCapWords</item>
         <item name="android:backgroundTint">@android:color/holo_green_dark</item>
     </style>
 
