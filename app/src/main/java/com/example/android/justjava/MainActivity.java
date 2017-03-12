@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Returns a message with the order number and the relevant price.
      *
-     * @param priceOfOrder is the total price of cups of coffee
+     * @param priceOfOrder    is the total price of cups of coffee
      * @param hasWhippedCream is the state of the checkbox
      * @return text summary
      */
