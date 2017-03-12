@@ -26,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
+        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
+        boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
+
         int price = calculatePrice(quantity, 5);
         Log.v("MainActivity", "The price is " + price); //logs a variable to console
 
-        String message = createOrderSummary(price);
+        String message = createOrderSummary(price, hasWhippedCream);
         displayMessage(message);
     }
 
@@ -48,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
      * Returns a message with the order number and the relevant price.
      *
      * @param priceOfOrder is the total price of cups of coffee
+     * @param hasWhippedCream is the state of the checkbox
+     * @return text summary
      */
-    private String createOrderSummary(int priceOfOrder) {
-        String message = "Name: Captain Kunal \nQuantity: " + quantity + " \nTotal: $" + priceOfOrder + " \nThank you!";
+    private String createOrderSummary(int priceOfOrder, boolean hasWhippedCream) {
+        String message = "Name: Captain Kunal \nAdd whipped cream? " + hasWhippedCream + "\nQuantity: " + quantity + " \nTotal: $" + priceOfOrder + " \nThank you!";
         return message;
     }
 
