@@ -130,6 +130,11 @@ public class MainActivity extends AppCompatActivity {
         orderSummaryTextView.setText(message);
     }
 
+    /**
+     * This method generates a toast message.
+     *
+     * @param message is the message poping up
+     */
     private void toast(String message) {
         Context context = getApplicationContext();
         CharSequence text = message;
@@ -139,6 +144,13 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
+    /**
+     * This method uses an android email intent.
+     *
+     * @param subject is the email subject
+     * @param name    is the email subject name
+     * @param content is the email text content
+     */
     public void composeEmail(String subject, String name, String content) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
