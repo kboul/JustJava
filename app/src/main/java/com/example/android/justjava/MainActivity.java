@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
         boolean hasChocolate = chocolateCheckBox.isChecked();
 
-        int price = calculatePrice(quantity, 5);
+        int price = calculatePrice(quantity, 5, hasWhippedCream, hasChocolate);
         Log.v("MainActivity", "The price is " + price); //logs a variable to console
 
         String message = createOrderSummary(price, hasWhippedCream, hasChocolate, nameEditTextContent);
@@ -46,11 +46,23 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calculates the price of the order.
      *
-     * @param quantity    is the number of cups of coffee ordered
-     * @param pricePerCup is the price per cups of coffee
+     * @param quantity        is the number of cups of coffee ordered
+     * @param pricePerCup     is the price per cups of coffee
+     * @param hasWhippedCream is the state of the whipped cream checkbox
+     * @param hasChocolate    is the state of chocolate checkbox
      */
-    private int calculatePrice(int quantity, int pricePerCup) {
+    private int calculatePrice(int quantity, int pricePerCup, boolean hasWhippedCream, boolean hasChocolate) {
         int price = quantity * pricePerCup;
+
+        if (hasWhippedCream && hasChocolate) {
+            price += 3;
+        } else if (hasWhippedCream) {
+            price += 1;
+        } else if (hasChocolate) {
+            price += 2;
+        } else {
+            return price;
+        }
         return price;
     }
 
@@ -58,8 +70,10 @@ public class MainActivity extends AppCompatActivity {
      * Returns a message with the order number and the relevant price.
      *
      * @param priceOfOrder    is the total price of cups of coffee
-     * @param hasWhippedCream is the state of the checkbox
+     * @param hasWhippedCream is the state of the whipped cream checkbox
+     * @param hasChocolate    is the state of chocolate checkbox
      * @return text summary
+     * @nameEditTextContent is the value of name edit text
      */
     private String createOrderSummary(int priceOfOrder, boolean hasWhippedCream, boolean hasChocolate, String nameEditTextContent) {
         String message = "Name: " + nameEditTextContent;
